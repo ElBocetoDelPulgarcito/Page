@@ -16,6 +16,14 @@ body {
     overflow: hidden;
 }
 
+.contenedor-imagen {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
 .titulo {
     color: #642a73;
     font-size: 30px;
@@ -96,7 +104,24 @@ main .sobre-nosotros{
     width: 50%;
 }
 
+main .imagen-plantilla1{
+    padding: 30px 0 60px 0;
+}
+
+.contenedor-imagen{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-de-prueba{
+    width: 50%;
+}
+
 .sobre-nosotros .contenido-textos{
+    width: 48%;
+}
+
+.contenedor-imagen .contenido-textos{
     width: 48%;
 }
 
@@ -106,7 +131,7 @@ main .sobre-nosotros{
 
 .contenido-textos h3 span{
     background: #4d0686;
-    color: #fff;
+    color: rgb(255, 255, 255);
     border-radius: 50%;
     display: inline-block;
     text-align: center;
@@ -121,6 +146,18 @@ main .sobre-nosotros{
     padding: 0px 0px 30px 15px;
     font-weight: 300;
     text-align: justify;
+}
+
+.cta{
+    padding: 7px;
+    width: 100px;
+    background-color: #d15dee;
+    border: 1px solid #fff;
+    border-radius: 55px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+
 }
 
 /* Galeria */
@@ -306,6 +343,21 @@ footer{
         width: 90%;
     }
 
+    .contenedor-imagen{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+.imagen-plantilla1 .contenido-textos{
+    width: 90%;
+}
+
+    .imagen-de-prueba{
+        width: 90%;
+    }
+
+
     /* Galeria */
 
     .imagen-port{
@@ -374,7 +426,17 @@ footer{
         width: 99%;
     }
 
+
     .sobre-nosotros .contenido-textos{
+        width: 95%;
+    }
+
+    .imagen-de-prueba{
+        margin-bottom: 60px;
+        width: 99%;
+    }
+
+    .imagen-plantilla1 .contenido-textos{
         width: 95%;
     }
 
@@ -423,4 +485,5 @@ footer{
     .titulo-final{
         font-size: 20px;
     }
+   
 }
