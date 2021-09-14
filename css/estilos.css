@@ -24,6 +24,22 @@ body {
     overflow: hidden;
 }
 
+.contenedor-imagen-bts {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-imagen-abeja {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
 .titulo {
     color: #642a73;
     font-size: 30px;
@@ -117,11 +133,45 @@ main .imagen-plantilla1{
     width: 50%;
 }
 
+main .imagen-plantilla2{
+    padding: 30px 0 60px 0;
+}
+
+.contenedor-imagen-bts{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-de-bts{
+    width: 50%;
+}
+
+main .imagen-plantilla3{
+    padding: 30px 0 60px 0;
+}
+
+.contenedor-imagen-abeja{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-de-abeja{
+    width: 50%;
+}
+
 .sobre-nosotros .contenido-textos{
     width: 48%;
 }
 
 .contenedor-imagen .contenido-textos{
+    width: 48%;
+}
+
+.contenedor-imagen-bts .contenido-textos{
+    width: 48%;
+}
+
+.contenedor-imagen-abeja .contenido-textos{
     width: 48%;
 }
 
@@ -357,6 +407,36 @@ footer{
         width: 90%;
     }
 
+    .contenedor-imagen-bts{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagen-plantilla2 .contenido-textos{
+        width: 90%;
+    }
+
+    .imagen-de-bts{
+        width: 90%;
+    }
+
+    .contenedor-imagen-abeja{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagen-plantilla3 .contenido-textos{
+        width: 90%;
+    }
+
+    .imagen-de-abeja{
+        width: 90%;
+    }
+
+
+
 
     /* Galeria */
 
@@ -437,6 +517,24 @@ footer{
     }
 
     .imagen-plantilla1 .contenido-textos{
+        width: 95%;
+    }
+
+    .imagen-de-bts{
+        margin-bottom: 60px;
+        width: 99%;
+    }
+
+    .imagen-plantilla2 .contenido-textos{
+        width: 95%;
+    }
+
+    .imagen-de-abeja{
+        margin-bottom: 60px;
+        width: 99%;
+    }
+
+    .imagen-plantilla3 .contenido-textos{
         width: 95%;
     }
 
