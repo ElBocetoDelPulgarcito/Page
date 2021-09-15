@@ -40,6 +40,22 @@ body {
     overflow: hidden;
 }
 
+.contenedor-imagen-abejitas{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-imagen-cactus{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
 .titulo {
     color: #642a73;
     font-size: 30px;
@@ -159,6 +175,32 @@ main .imagen-plantilla3{
     width: 50%;
 }
 
+main .imagen-plantilla4{
+    padding: 30px 0 60px 0;
+}
+
+.contenedor-imagen-abejitas{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-de-abejitas{
+    width: 50%;
+}
+
+main .imagen-plantilla5{
+    padding: 30px 0 60px 0;
+}
+
+.contenedor-imagen-cactus{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-de-cactus{
+    width: 50%;
+}
+
 .sobre-nosotros .contenido-textos{
     width: 48%;
 }
@@ -172,6 +214,14 @@ main .imagen-plantilla3{
 }
 
 .contenedor-imagen-abeja .contenido-textos{
+    width: 48%;
+}
+
+.contenedor-imagen-abejitas .contenido-textos{
+    width: 48%;
+}
+
+.contenedor-imagen-cactus .contenido-textos{
     width: 48%;
 }
 
@@ -207,7 +257,17 @@ main .imagen-plantilla3{
     text-align: center;
     text-decoration: none;
     color: #fff;
+}
 
+.cta2{
+    padding: 7px;
+    width: 100px;
+    background-color: #fcfcfc;
+    border: 1px solid #fff;
+    border-radius: 55px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(255, 110, 207);
 }
 
 /* Galeria */
@@ -399,9 +459,9 @@ footer{
         align-items: center;
     }
 
-.imagen-plantilla1 .contenido-textos{
-    width: 90%;
-}
+    .imagen-plantilla1 .contenido-textos{
+        width: 90%;
+    }
 
     .imagen-de-prueba{
         width: 90%;
@@ -435,7 +495,33 @@ footer{
         width: 90%;
     }
 
+    .contenedor-imagen-abejitas{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
+    .imagen-plantilla4 .contenido-textos{
+        width: 90%;
+    }
+
+    .imagen-de-abejitas{
+        width: 90%;
+    }
+
+    .contenedor-imagen-cactus{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagen-plantilla5 .contenido-textos{
+        width: 90%;
+    }
+
+    .imagen-de-cactus{
+        width: 90%;
+    }
 
 
     /* Galeria */
@@ -535,6 +621,24 @@ footer{
     }
 
     .imagen-plantilla3 .contenido-textos{
+        width: 95%;
+    }
+
+    .imagen-de-abejitas{
+        margin-bottom: 60px;
+        width: 99%;
+    }
+
+    .imagen-plantilla4 .contenido-textos{
+        width: 95%;
+    }
+
+    .imagen-de-cactus{
+        margin-bottom: 60px;
+        width: 99%;
+    }
+
+    .imagen-plantilla5 .contenido-textos{
         width: 95%;
     }
 
