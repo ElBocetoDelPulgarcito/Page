@@ -56,6 +56,22 @@ body {
     overflow: hidden;
 }
 
+.contenedor-imagen-escandalosos{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-imagen-gatito{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
 .titulo {
     color: #642a73;
     font-size: 30px;
@@ -79,6 +95,12 @@ header {
     position: relative;
 }
 
+.modal{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
 nav{
     text-align: right;
     padding: 30px 50px 0 0;
@@ -94,6 +116,7 @@ nav > a{
 nav > a:hover{
     text-decoration: underline;
 }
+
 
 header .textos-header{
     display: flex;
@@ -201,6 +224,32 @@ main .imagen-plantilla5{
     width: 50%;
 }
 
+main .imagen-plantilla6{
+    padding: 30px 0 60px 0;
+}
+
+.contenedor-imagen-escandalosos{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-de-escandalosos{
+    width: 50%;
+}
+
+main .imagen-plantilla7{
+    padding: 30px 0 60px 0;
+}
+
+.contenedor-imagen-gatito{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-de-gatito{
+    width: 50%;
+}
+
 .sobre-nosotros .contenido-textos{
     width: 48%;
 }
@@ -222,6 +271,14 @@ main .imagen-plantilla5{
 }
 
 .contenedor-imagen-cactus .contenido-textos{
+    width: 48%;
+}
+
+.contenedor-imagen-escandalosos .contenido-textos{
+    width: 48%;
+}
+
+.contenedor-imagen-gatito .contenido-textos{
     width: 48%;
 }
 
@@ -257,6 +314,98 @@ main .imagen-plantilla5{
     text-align: center;
     text-decoration: none;
     color: #fff;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    display: flex;
+
+    --opacity: 0;
+    --pointer: none;
+
+    opacity: var(--opacity);
+    pointer-events: var(--pointer);
+    transition: opacity .5s;
+}
+
+.modal:target{
+    --opacity: 1;
+    --pointer:  unset;
+}
+
+.modal_container{
+    margin: auto;
+    background-color: #fff;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    overflow: hidden;
+    text-align: center;
+    padding: 2.5m 1.5m;
+    border-radius: 1em;
+}
+
+.modal:target .modal_container{
+    animation: show 1s .5s backwards;
+}
+
+@keyframes show {
+    0%{
+        transform: translateY(-150vh);
+    }
+}
+
+.modal_picture{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 400px;
+    margin-bottom: 2em;
+}
+
+.modal:target .modal_picture{
+    animation: scale .5s 1s backwards;
+}
+
+@keyframes scale {
+    0%{
+        transform: scale(0);
+    }
+}
+
+.modal_img{
+    width: 100%;
+    display: block;
+}
+
+.modal_title{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.modal-paragraph{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    line-height: 1.5;
+}
+.modal_close{
+    display: inline-block;
+    border: 1px solid;
+    padding: 1em 2em;
+    text-decoration: none;
+    font-weight: 700;
+    color: #333;
+    border-radius: .4em;
+}
+
+@media (max-width:600px) {
+    .modal_title{
+        font-size: 1.7rem;
+    }
 }
 
 .cta2{
@@ -523,6 +672,34 @@ footer{
         width: 90%;
     }
 
+    .contenedor-imagen-escandalosos{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagen-plantilla6 .contenido-textos{
+        width: 90%;
+    }
+
+    .imagen-de-escandalosos{
+        width: 90%;
+    }
+
+    .contenedor-imagen-gatito{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagen-plantilla7 .contenido-textos{
+        width: 90%;
+    }
+
+    .contenedor-imagen-gatito{
+        width: 90%;
+    }
+
 
     /* Galeria */
 
@@ -639,6 +816,24 @@ footer{
     }
 
     .imagen-plantilla5 .contenido-textos{
+        width: 95%;
+    }
+
+    .imagen-de-escandalosos{
+        margin-bottom: 60px;
+        width: 99%;
+    }
+
+    .imagen-plantilla6 .contenido-textos{
+        width: 95%;
+    }
+
+    .imagen-de-gatito{
+        margin-bottom: 60px;
+        width: 99%;
+    }
+
+    .imagen-plantilla7 .contenido-textos{
         width: 95%;
     }
 
