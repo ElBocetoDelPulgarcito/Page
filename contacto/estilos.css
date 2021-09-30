@@ -75,6 +75,7 @@ form .grupo{
     margin: 45px;
 }
 
+
 input, textarea{
     background: none;
     color:#c6c6c6;
@@ -157,6 +158,23 @@ button{
     border-radius: 4px;
     font-size: 16px;
     margin: 10px auto;
+    cursor: pointer;
+}
+
+
+#cierre{
+    align-items: center;
+}
+
+#cierre-id{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    background-color: #ffff;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
     cursor: pointer;
 }
 
